@@ -1,0 +1,12 @@
+From: treasury@acme.test
+To: records@acme.test
+Date: Tue, 20 Jan 2026 08:30:00 -0600
+Subject: Synthetic payment record
+Message-ID: <payment-932@acme.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+On January 20, 2026, Acme Corporation paid Payment #932 for Contract #428.
+
+This message and every identity in it are fictional test data.

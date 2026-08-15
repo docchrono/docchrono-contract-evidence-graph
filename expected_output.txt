@@ -1,0 +1,37 @@
+DocChrono contract evidence graph
+=================================
+Build complete: True
+Documents: 3
+Entities: 7
+Events: 4
+Relationships: 11
+
+Dated chronology
+-----------------
+2026-01-05 | Signed: Contract #428 | source: contract_record.docx
+2026-01-12 | Approved: Contract #428 | source: approval.md
+2026-01-20 | Paid: Payment #932 for Contract #428 | source: payment.eml
+2026-01-20 | Email Sent | source: payment.eml
+
+Neighbors of Robert Williams
+----------------------------
+event: Approved: Contract #428
+
+Shortest evidence path: Robert Williams to Payment #932
+-------------------------------------------------------
+1. Robert Williams --[PARTICIPATED_IN]-- Approved: Contract #428
+   source: approval.md
+   quote: "Robert Williams approved Contract #428"
+2. Approved: Contract #428 --[PARTICIPATED_IN]-- Contract #428
+   source: approval.md
+   quote: "Robert Williams approved Contract #428"
+3. Contract #428 --[PARTICIPATED_IN]-- Paid: Payment #932 for Contract #428
+   source: payment.eml
+   quote: "Acme Corporation paid Payment #932 for Contract #428"
+4. Paid: Payment #932 for Contract #428 --[PARTICIPATED_IN]-- Payment #932
+   source: payment.eml
+   quote: "Acme Corporation paid Payment #932 for Contract #428"
+
+Interpretation
+--------------
+The graph shows source-backed connectivity, not verified truth or causation.
